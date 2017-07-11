@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GreenDaoDemo.iml" filepath="$PROJECT_DIR$/GreenDaoDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gd-bean-ui/gd-bean-ui.iml" filepath="$PROJECT_DIR$/gd-bean-ui/gd-bean-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gd-normal-ui/gd-normal-ui.iml" filepath="$PROJECT_DIR$/gd-normal-ui/gd-normal-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gd-rxjava-retrofit/gd-rxjava-retrofit.iml" filepath="$PROJECT_DIR$/gd-rxjava-retrofit/gd-rxjava-retrofit.iml" />
+    </modules>
+  </component>
+</project>

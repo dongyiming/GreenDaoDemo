@@ -1,0 +1,1 @@
+include ':app', ':gd-normal-ui', ':gd-rxjava-retrofit', ':gd-bean-ui'
