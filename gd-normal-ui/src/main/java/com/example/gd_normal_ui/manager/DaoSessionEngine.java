@@ -8,7 +8,7 @@ import com.example.gd_normal_ui.application.MyApplication;
 
 /**
  * @version : 1.0
- * @Description :
+ * @Description : 数据库内存存储，基本存储
  * @autho : dongyiming
  * @data : 2017/7/10 1:15
  */

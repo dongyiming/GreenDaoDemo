@@ -2,9 +2,12 @@ package com.example.gd_normal_ui.repository;
 
 import android.util.Log;
 
+import com.example.gd_bean_ui.greendao.DaoSession;
 import com.example.gd_bean_ui.greendao.MenuInfoDao;
 import com.example.gd_bean_ui.vo.MenuInfo;
+import com.example.gd_normal_ui.application.MyApplication;
 import com.example.gd_normal_ui.interaction.IMenuRepository;
+import com.example.gd_normal_ui.manager.DaoHelperEngine;
 
 import java.util.List;
 
@@ -17,10 +20,12 @@ import java.util.List;
 public class MenuRepository extends BaseRepository<MenuInfo> implements IMenuRepository {
 
     private MenuInfoDao menuInfoDao;
+    private final DaoSession daoSession;
 
     public MenuRepository() {
 
-        menuInfoDao = readableSession.getMenuInfoDao();
+        //menuInfoDao = readableSession.getMenuInfoDao();
+        daoSession = DaoHelperEngine.getInstance().getDaoSession(MyApplication.mContext);
     }
 
     /**
@@ -59,7 +64,9 @@ public class MenuRepository extends BaseRepository<MenuInfo> implements IMenuRep
             return false;
         }
         try {
-            writeableSession.getMenuInfoDao().insertInTx(menuInfos);
+            //writeableSession.getMenuInfoDao().insertInTx(menuInfos);
+            daoSession.getMenuInfoDao().insertInTx(menuInfos);
+            Log.e("dongyiming", "insertlist is successed " + menuInfos.size());
             flag = true;
         } catch (Exception e) {
             flag = false;
